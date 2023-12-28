@@ -4,7 +4,7 @@ class Section extends Component {
   render() {
     return (
       <div>
-        <h2>Please leave your feedback</h2>
+        {this.props.title}
         {this.props.children}
       </div>
     );

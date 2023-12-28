@@ -1,0 +1,40 @@
+.btn_li{
+    box-shadow: 10px 5px 5px grey;
+    list-style: none;
+}
+.btn_ul{
+    
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding-left: 0;
+}
+.one{
+    width: 100px;
+    background-color: green ;
+}
+.two{
+    width: 100px;
+    background-color: orange;
+}
+.three{
+    width: 100px;
+    background-color: red;
+}
+.btn_p{
+    color: white;
+    font-size: 18px;
+}
+.title {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.sectionTitle {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
