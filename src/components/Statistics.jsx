@@ -6,13 +6,13 @@ class Statistics extends Component {
     const all = this.props.good + this.props.neutral + this.props.bad;
     const good = this.props.good + this.props.neutral;
     const positive = (good * 100) / all;
-    return positive.toFixed(2);
+    return Math.round(positive);
   };
   
   render() {
     return (
       <div>
-        <ul>
+        <ul className='sts_ul'>
           <li>
             <p>good {this.props.good}</p>
           </li>

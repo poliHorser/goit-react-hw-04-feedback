@@ -25,16 +25,20 @@
     color: white;
     font-size: 18px;
 }
-.title {
-    text-align: center;
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 20px;
+.all{
+    padding-top: 20px;
+    padding-left: 20px;
 }
 
-.sectionTitle {
+.sts_ul{
     font-size: 20px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
+    font-weight: 50;
+    list-style: none;
+    padding-left: 10px;
+}
+.sect{
+    font-size: 30px;
+}
+.not{
+    font-weight: 20;
 }

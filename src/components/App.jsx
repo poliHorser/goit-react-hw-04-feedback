@@ -23,7 +23,7 @@ class App extends Component {
     const totalFeedback = good + neutral + bad;
 
     return (
-      <div>
+      <div className='all'>
         <Section title="Please leave your feedback">
           <FeedbackOptions onLeaveFeedback={this.handleLeaveFeedback} />
         </Section>
@@ -32,7 +32,7 @@ class App extends Component {
           {totalFeedback > 0 ? (
             <Statistics good={good} neutral={neutral} bad={bad} />
           ) : (
-            <Notification message="There is no feedback" />
+            <Notification  message="There is no feedback" />
           )}
         </Section>
       </div>
