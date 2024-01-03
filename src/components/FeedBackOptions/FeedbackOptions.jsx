@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import './FeedBackOptions.css'
 
 class FeedbackOptions extends Component {
@@ -28,5 +29,4 @@ class FeedbackOptions extends Component {
     );
   }
 }
-
 export default FeedbackOptions;

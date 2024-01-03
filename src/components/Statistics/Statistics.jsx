@@ -1,10 +1,10 @@
-// Statistics.js
 import React, { Component } from 'react';
+
 import './Statistics.css'
 class Statistics extends Component {
   Positive = () => {
     const all = this.props.good + this.props.neutral + this.props.bad;
-    const good = this.props.good
+    const good = this.props.good;
     const positive = (good * 100) / all;
     return Math.round(positive);
   };
@@ -33,5 +33,4 @@ class Statistics extends Component {
     );
   }
 }
-
 export default Statistics;
