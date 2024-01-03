@@ -1,44 +1,32 @@
-.btn_li{
+.btn_li {
     box-shadow: 10px 5px 5px grey;
     list-style: none;
 }
-.btn_ul{
-    
+
+.btn_ul {
+
     display: flex;
     flex-direction: row;
     gap: 15px;
     padding-left: 0;
 }
-.one{
+
+.one {
     width: 100px;
-    background-color: green ;
+    background-color: green;
 }
-.two{
+
+.two {
     width: 100px;
     background-color: orange;
 }
-.three{
+
+.three {
     width: 100px;
     background-color: red;
 }
-.btn_p{
+
+.btn_p {
     color: white;
     font-size: 18px;
-}
-.all{
-    padding-top: 20px;
-    padding-left: 20px;
-}
-
-.sts_ul{
-    font-size: 20px;
-    font-weight: 50;
-    list-style: none;
-    padding-left: 10px;
-}
-.sect{
-    font-size: 30px;
-}
-.not{
-    font-weight: 20;
 }

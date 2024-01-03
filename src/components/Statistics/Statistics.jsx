@@ -1,6 +1,6 @@
 // Statistics.js
 import React, { Component } from 'react';
-
+import './Statistics.css'
 class Statistics extends Component {
   Positive = () => {
     const all = this.props.good + this.props.neutral + this.props.bad;

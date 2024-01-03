@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './All.css'
+import './FeedBackOptions.css'
 
 class FeedbackOptions extends Component {
   render() {
