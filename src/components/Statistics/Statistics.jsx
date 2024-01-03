@@ -4,7 +4,7 @@ import './Statistics.css'
 class Statistics extends Component {
   Positive = () => {
     const all = this.props.good + this.props.neutral + this.props.bad;
-    const good = this.props.good + this.props.neutral;
+    const good = this.props.good
     const positive = (good * 100) / all;
     return Math.round(positive);
   };

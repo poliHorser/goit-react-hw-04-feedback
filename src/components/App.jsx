@@ -17,10 +17,16 @@ class App extends Component {
   handleLeaveFeedback = (type) => {
     this.setState((prevState) => ({ [type]: prevState[type] + 1 }));
   };
+ 
 
   render() {
     const { good, neutral, bad } = this.state;
     const totalFeedback = good + neutral + bad;
+
+
+    const all = this.props.good + this.props.neutral + this.props.bad;
+    const normal = this.props.good + this.props.neutral;
+    const positive = (normal * 100) / all;
 
     return (
       <div className='all'>
@@ -30,7 +36,7 @@ class App extends Component {
 
         <Section  title="Statistics">
           {totalFeedback > 0 ? (
-            <Statistics good={good} neutral={neutral} bad={bad} />
+            <Statistics good={good} neutral={neutral} bad={bad} positivePercentage={positive}/>
           ) : (
             <Notification  message="There is no feedback" />
           )}
