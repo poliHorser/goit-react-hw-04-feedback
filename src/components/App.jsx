@@ -17,10 +17,12 @@ class App extends Component {
   render() {
     const { good, neutral, bad } = this.state;
     const totalFeedback = good + neutral + bad;
+
+    const objKey = Object.keys(this.state);
     return (
       <div className='all'>
         <Section title="Please leave your feedback">
-          <FeedbackOptions onLeaveFeedback={this.handleLeaveFeedback} />
+          <FeedbackOptions options={objKey} onLeaveFeedback={this.handleLeaveFeedback} />
         </Section>
         <Section  title="Statistics">
           {totalFeedback > 0 ? (
