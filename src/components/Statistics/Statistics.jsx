@@ -1,36 +1,28 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import './Statistics.css'
-class Statistics extends Component {
-  Positive = () => {
-    const all = this.props.good + this.props.neutral + this.props.bad;
-    const good = this.props.good;
-    const positive = (good * 100) / all;
-    return Math.round(positive);
-  };
-  
-  render() {
-    return (
+const Statistics = ({good, neutral, bad,totalFeedback, positivePercentage }) => {
+  return (
       <div>
         <ul className='sts_ul'>
           <li>
-            <p>good {this.props.good}</p>
+            <p>good {good}</p>
           </li>
           <li>
-            <p>neutral {this.props.neutral}</p>
+            <p>neutral {neutral}</p>
           </li>
           <li>
-            <p>bad {this.props.bad}</p>
+            <p>bad {bad}</p>
           </li>
           <li>
-            <p>total {this.props.good + this.props.neutral + this.props.bad}</p>
+            <p>total {totalFeedback}</p>
           </li>
           <li>
-            <p>positive feedback {this.Positive()}%</p>
+            <p>positive feedback {positivePercentage}%</p>
           </li>
         </ul>
       </div>
     );
-  }
+  
 }
 export default Statistics;

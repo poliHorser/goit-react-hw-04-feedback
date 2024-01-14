@@ -25,6 +25,8 @@ const App = () => {
   const totalFeedback = good + neutral + bad;
   const objKey = Object.keys(feedbacks);
 
+  const positiveFeedback = Math.round((good / totalFeedback) * 100);
+
   
   return (
   <div className='all'>
@@ -33,7 +35,7 @@ const App = () => {
         </Section>
         <Section  title="Statistics">
           {totalFeedback > 0 ? (
-            <Statistics good={good} neutral={neutral} bad={bad} />
+          <Statistics good={good} neutral={neutral} bad={bad} totalFeedback={totalFeedback} positivePercentage={positiveFeedback} />
           ) : (
             <Notification  message="There is no feedback" />
           )}

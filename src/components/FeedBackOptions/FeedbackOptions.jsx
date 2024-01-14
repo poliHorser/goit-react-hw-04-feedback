@@ -1,4 +1,4 @@
-// FeedbackOptions.jsx
+
 import React from 'react';
 import './FeedBackOptions.css';
 
